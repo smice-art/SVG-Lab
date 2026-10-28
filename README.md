@@ -12,8 +12,6 @@ The panel lives in the 3D Viewport under **N-Panel › SVG Pattern**.
 
 > **Note 2:** ℹ️ This Tool is developed for Blender ADDON "Tile Lab" available on Superhivemarket https://superhivemarket.com/products/blender-tile-lab.
 
-> **Note 3:** ℹ️ PDF Converting does not work on "non-vector" pdf´s. It has to be a vector pdf.
-
 ---
 
 ## Contents
