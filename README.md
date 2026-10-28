@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/addon.jpg" alt="polytopes width="100%">
+</p>
+
 # SVG Pattern Import – User Guide
 
 SVG Pattern Import brings geometric patterns from SVG files (for example converted from PDF) into Blender as clean curves, cuts out seamless tiles and saves them for the **Tile Lab** add-on.
