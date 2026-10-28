@@ -178,5 +178,5 @@ Tile Lab should be installed: the add-on then finds the Custom folder automatica
 
 ## Screenshot
 <p align="center">
-  <img src="images/screen.jpg" alt="polytopes width="100%">
+  <img src="images/screen.jpg" alt="pdf2svg width="100%">
 </p>
