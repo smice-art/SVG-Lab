@@ -4,7 +4,7 @@
 
 # SVG Pattern Import – User Guide
 
-SVG Pattern Import brings geometric patterns from SVG files (for example converted from PDF) into Blender as clean curves, cuts out seamless tiles and saves them for the **Tile Lab** add-on.
+SVG "Pattern Import" brings geometric patterns from SVG files (for example converted from PDF) into Blender as clean curves, cuts out seamless tiles and saves them for the **Tile Lab** add-on.
 
 The panel lives in the 3D Viewport under **N-Panel › SVG Pattern**.
 
