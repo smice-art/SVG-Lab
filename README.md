@@ -8,7 +8,9 @@ SVG Pattern Import brings geometric patterns from SVG files (for example convert
 
 The panel lives in the 3D Viewport under **N-Panel › SVG Pattern**.
 
-> **Note:** The panel is currently in German, written without umlauts (e.g. "Groesse"). This guide quotes every label exactly as it appears in the panel and explains it in English.
+> **Note 1:** The panel is currently in German, written without umlauts (e.g. "Groesse"). This guide quotes every label exactly as it appears in the panel and explains it in English.
+
+> **Note 2:** The Tool is developed for Blender ADDON "Tile Lab" available on Superhivemarket.
 
 ---
 
