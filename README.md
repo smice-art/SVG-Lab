@@ -175,3 +175,8 @@ Tile Lab should be installed: the add-on then finds the Custom folder automatica
 - Tile Lab accepts at most 8 colours per tile; Tile Lab merges any extra colours into the most similar one.
 - Rounding errors from the PDF conversion are around 0.1 units. "Punkte verschweissen" and "Naehte schliessen" compensate for them; if you see jagged steps at tile borders, use **Groesse aus Muster messen** first.
 - Patterns that don't fully repeat on the page (single motifs, rosettes) can't be measured; the repeat preview helps when setting the size by hand.
+
+## Screenshot
+<p align="center">
+  <img src="images/screen.jpg" alt="polytopes width="100%">
+</p>

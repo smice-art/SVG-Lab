@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### AL ###
 #Template for AL projects for Dynamics 365 Business Central
 #launch.json folder
@@ -20,4 +21,6 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+=======
+>>>>>>> 08773bcff2c3273d22674893b5023bfa5f22c314
 .DS_Store
