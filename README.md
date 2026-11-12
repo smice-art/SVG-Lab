@@ -1,16 +1,10 @@
-<p align="center">
-  <img src="images/addon.jpg" alt="polytopes width="100%">
-</p>
-
 # SVG Pattern Import – User Guide
 
-SVG "Pattern Import" brings geometric patterns from SVG files (for example converted from PDF) into Blender as clean curves, cuts out seamless tiles and saves them for the **Tile Lab** add-on.
+SVG Pattern Import brings geometric patterns from SVG files (for example converted from PDF) into Blender as clean curves, cuts out seamless tiles and saves them for the **Tile Lab** add-on.
 
 The panel lives in the 3D Viewport under **N-Panel › SVG Pattern**.
 
-> **Note 1:** ℹ️ The panel is currently in German, written without umlauts (e.g. "Groesse"). This guide quotes every label exactly as it appears in the panel and explains it in English.
-
-> **Note 2:** ℹ️ This Tool is developed for Blender ADDON "Tile Lab" available on Superhivemarket https://superhivemarket.com/products/blender-tile-lab.
+> **Note:** The panel is currently in German, written without umlauts (e.g. "Groesse"). This guide quotes every label exactly as it appears in the panel and explains it in English.
 
 ---
 
@@ -74,6 +68,8 @@ The **Ergebnis** (Result) box controls how the SVG is turned into curves. The de
 | Beruehrende Formen trennen | on | Distributes touching or overlapping shapes across several curve objects so Blender doesn't punch holes. |
 | Linien weiterfuehren bis (Grad) | 60 | Line network only: at crossings, lines continue as long as the bend is at most this angle. 0 = split at every crossing. |
 | Teilflaechen vereinigen | on | Paths made of several triangles or parts (shading in the PDF) are cleanly merged or separated. |
+| Hintergrund ignorieren (Ignore background) | on | A filled area covering the whole page (a background rectangle, e.g. from the Teselate or Arabic Pattern Studio) is not imported as a shape. In Tile Lab its colour becomes the tile background. |
+| Hintergrund als Flaeche (Background as area) | on | Only active with "Hintergrund ignorieren". Keeps the background colour as its own curve object *‹name›_Hintergrund*, filling exactly the space between the shapes and sitting slightly below them. Without it, a pattern whose third colour is the page background loses that colour in Blender. Cut & Merge takes it along as an extra material slot. |
 
 ---
 
@@ -168,6 +164,14 @@ Tile Lab should be installed: the add-on then finds the Custom folder automatica
 
 ---
 
+## SVGs from other programs
+
+Besides PDF conversions, the add-on reads SVGs that place shapes with `<use>` references, percentage sizes and `rgba()` colours. Text glyphs from PDF conversions are ignored.
+
+If the SVG's root element carries `data-tile-width` and `data-tile-height` (written by the **SVG für Blender** button of the Teselate and Arabic Pattern Studio), loading the file sets the frame to exactly this repeat size – no measuring needed.
+
+The two studios can also skip Blender entirely: their **JSON für Tile Lab** button saves a *.tilelab.json* (filled areas only) that goes straight into Tile Lab's Custom folder.
+
 ## More features and limits
 
 - **SVG-Dateien importieren** / **Ordner stapelweise importieren** (bottom of the panel): import single files or a whole folder with the same settings as permanent objects, independent of the preview.
@@ -175,8 +179,3 @@ Tile Lab should be installed: the add-on then finds the Custom folder automatica
 - Tile Lab accepts at most 8 colours per tile; Tile Lab merges any extra colours into the most similar one.
 - Rounding errors from the PDF conversion are around 0.1 units. "Punkte verschweissen" and "Naehte schliessen" compensate for them; if you see jagged steps at tile borders, use **Groesse aus Muster messen** first.
 - Patterns that don't fully repeat on the page (single motifs, rosettes) can't be measured; the repeat preview helps when setting the size by hand.
-
-## Screenshot
-<p align="center">
-  <img src="images/screen.jpg" alt="pdf2svg width="100%">
-</p>
