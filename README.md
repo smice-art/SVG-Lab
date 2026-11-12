@@ -1,10 +1,16 @@
+<p align="center">
+  <img src="images/addon.jpg" alt="polytopes width="100%">
+</p>
+
 # SVG Pattern Import – User Guide
 
-SVG Pattern Import brings geometric patterns from SVG files (for example converted from PDF) into Blender as clean curves, cuts out seamless tiles and saves them for the **Tile Lab** add-on.
+SVG "Pattern Import" brings geometric patterns from SVG files (for example converted from PDF) into Blender as clean curves, cuts out seamless tiles and saves them for the **Tile Lab** add-on.
 
 The panel lives in the 3D Viewport under **N-Panel › SVG Pattern**.
 
-> **Note:** The panel is currently in German, written without umlauts (e.g. "Groesse"). This guide quotes every label exactly as it appears in the panel and explains it in English.
+> **Note 1:** ℹ️ The panel is currently in German, written without umlauts (e.g. "Groesse"). This guide quotes every label exactly as it appears in the panel and explains it in English.
+
+> **Note 2:** ℹ️ This Tool is developed for Blender ADDON "Tile Lab" available on Superhivemarket https://superhivemarket.com/products/blender-tile-lab.
 
 ---
 
